@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-deep-ocean: #041C32;
+  --color-ocean-mid: #064663;
+  --color-coral-pink: #FF6B4A;
+  --color-coral-purple: #9C27B0;
+  --color-bioluminescent: #00D9FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #0a1628 0%, #0d2847 50%, #0a1628 100%);
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: 'Fredoka One', cursive;
+}
+
+.font-body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Prevent text selection during gameplay */
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Smooth touch scrolling */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #041C32;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #064663;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a5a7a;
+}
